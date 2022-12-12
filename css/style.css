@@ -143,6 +143,7 @@ header {
   .headerpicture {
     height: 20vh;
     background-image: url(/img/strandbaggrund.webp);
+    background-position-y: 0px;
   }
   .headerpicture h3 {
     text-align: center;
@@ -151,8 +152,9 @@ header {
   }
   .section2 {
     background-image: url(/img/tuborg-squash-sommerkit.webp);
-    height: 80vh;
+    height: 90vh;
     background-repeat: no-repeat;
+    background-size: auto;
     background-position: center;
     background-position-y: 0px;
     width: auto;
@@ -180,6 +182,10 @@ header {
     padding: 5px;
 
   }
-  
+  .firstline {
+    bottom: 0;
+  }
+ 
+  .section3 
  
 }
