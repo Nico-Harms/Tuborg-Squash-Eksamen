@@ -83,7 +83,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    
+
   }
 
   .navbar-links ul {
@@ -105,6 +105,7 @@ header {
   .navbar-links.active {
     display: flex;
   }
+
   .mainclass {
     height: 100vh;
     scroll-snap-align: start;
@@ -118,41 +119,134 @@ header {
     align-items: center;
     background-image: url(/img/Landing-page-squash.webp);
   }
+
   .mainclass section p {
     margin: 20px;
     font-size: 1.2rem;
     text-align: center;
-    
+
   }
+
   .mainclass h2 {
     font-size: 1.4rem;
   }
+
   .headliner1 {
     text-align: center;
     padding-bottom: 10px;
     padding-top: 20px;
   }
+
   .inline {
-  display: flex;
-  justify-content: space-between;
-  margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
   }
+
   .text-landing {
     height: 60vh;
   }
+
   .headerpicture {
     height: 20vh;
     background-image: url(/img/strandbaggrund.webp);
     background-position-y: 0px;
   }
+
   .headerpicture h3 {
     text-align: center;
     padding-top: 70px;
     font-size: 1.6rem;
   }
+
   .section2 {
-    background-image: url(/img/tuborg-squash-sommerkit.webp);
-    height: 90vh;
+    background-image: url(/img/sommerkit.jpg);
+    height: 45vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 0px;
+    width: auto;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section2 p {
+    text-align: center;
+    font-size: 1.3rem;
+
+  }
+}
+
+.section2 p {
+  bottom: 0;
+}
+
+.boxunder {
+  height: 40vh;
+  width: 100%;
+  background-color: #f6995b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid red;
+
+}
+
+.boxunder input {
+  height: 30px;
+  width: 30%;
+}
+
+.boxunder a {
+  height: 30px;
+  width: 150px;
+  background-color: white;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid rgb(33, 33, 172);
+  padding: 5px;
+
+}
+
+.wrapper img {
+  height: 20vh;
+  width: 25vh;
+  border: 2px solid rgb(0, 0, 0);
+  position: relative;
+  left: -50px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  border: 2px solid red
+}
+.column2 {
+  float: right;
+  width: 70%;
+  padding: 10px;
+  border: 2px solid rgb(38, 0, 255); 
+  display: flex;
+  flex-direction: column;
+}
+.column2 input { 
+  margin: 10px;
+  width: 70%;
+}
+.column2 a {
+  width: 70%;
+  margin: 10px;
+}
+
+
+  .section3 {
+    background-image: url(/img/produktside.webp);
+    height: 80vh;
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
@@ -163,29 +257,4 @@ header {
     flex-direction: column;
     align-items: center;
   }
-  .section2 p { 
-    text-align: center;
-    font-size: 1.3rem;
-    
-  }
-  .section2 input {
-    height: 30px;
-    width: 30%;
-  }
-  .section2 a {
-    height: 30px;
-    width: 150px;
-    background-color: white;
-    text-align: center;
-    border-radius: 5px;
-    border: 1px solid rgb(33, 33, 172);
-    padding: 5px;
-
-  }
-  .firstline {
-    bottom: 0;
-  }
- 
-  .section3 
- 
-}
+  
