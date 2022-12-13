@@ -105,7 +105,7 @@ header {
 }
 
 .mainclass {
-  height: 80vh;
+  height: 100vh;
   scroll-snap-align: start;
   background-repeat: no-repeat;
   background-position: center;
@@ -156,13 +156,15 @@ header {
 }
 .headerpicture h3 {
   text-align: center;
+  display: flex;
   justify-content: center;
   padding-top: 55px;
   font-size: 1.6rem;
+  width: auto;
 }
 .section2 {
   background-image: url(/img/sommerkit-side.png);
-  height: 90vh;
+  height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -224,6 +226,16 @@ color: rgb(0, 0, 0);
 font-size: larger;
 font-weight: bold;
 
+}
+
+.section3 {
+  background-image: url(/img/produktside-desktop.webp);
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  background-size: 100%;
 }
 
 /* Media query for mobile devices FIRST */ 
