@@ -8,7 +8,6 @@
 
 header {
   display: flex;
-  position: fixed;
   top: 0;
   width: 100%;
   justify-content: space-between;
@@ -31,7 +30,6 @@ header {
   justify-content: space-between;
   height: 60px;
   background-color: white;
-  position: fixed;
   top: 0;
 
 }
@@ -106,6 +104,129 @@ header {
   display: none;
 }
 
+.mainclass {
+  height: 80vh;
+  scroll-snap-align: start;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 0px;
+  width: auto;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(/img/forside-tuborg-squash.webp);
+}
+
+.text-landing {
+  position: relative;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.headliner1 {
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.inline {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  width: 70rem;
+  
+}
+.mainclass h2 {
+  font-size: 3rem;
+}
+.mainclass p  {
+  font-size: 1.8rem;
+  padding-bottom: 20px;
+}
+
+.headerpicture {
+  height: 25vh;
+  background-image: url(/img/strandbaggrund-desktop.webp);
+  background-position-y: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+.headerpicture h3 {
+  text-align: center;
+  justify-content: center;
+  padding-top: 55px;
+  font-size: 1.6rem;
+}
+.section2 {
+  background-image: url(/img/sommerkit-side.png);
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: 0px;
+  width: auto;
+  background-size: 100%;
+}
+.section2-mobile {
+  display: none;
+}
+/* Text next to can, needs to be adjusted */
+.section2-desktop {
+  font-size: 1.5rem;
+  width: 30%;
+  height: 550px;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 250px;
+  padding-bottom: 50px;
+  font-weight: bold;
+  
+}
+.boxunder {
+ display: none;
+}
+.nyhedsbrev {
+  width: 20%;
+  float: right;
+  text-align: center;
+  align-items: center;
+  height: 400px; 
+  background-color: #f6995b;
+  margin-top: 20%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+.nyhedsbrev p {
+  line-height: 2rem;
+  font-size: 1,9rem;
+}
+.nyhedsbrev input {
+  width: 80%; 
+  height: 10%;
+  margin-top: 10%;
+  border: 1px solid black
+}
+.nyhedsbrev a {
+width: 80%;
+  height: 15%;
+background-color: white;
+border-radius: 10px;
+margin-top: 10%;
+padding: 15px;
+border: 1px solid rgb(0, 0, 0);
+color: rgb(0, 0, 0);
+font-size: larger;
+font-weight: bold;
+
+}
+
+/* Media query for mobile devices FIRST */ 
 @media only screen and (max-width: 675px) {
 
   .toggle-button {
@@ -192,13 +313,6 @@ header {
     background-position-y: 0px;
   }
 
-  .headerpicture h3 {
-    text-align: center;
-    justify-content: center;
-    padding-top: 55px;
-    font-size: 1.6rem;
-  }
-
   .section2 {
     background-image: url(/img/sommerkit.jpg);
     height: 45vh;
@@ -218,10 +332,15 @@ header {
     font-size: 1.3rem;
 
   }
-
+  .section2-desktop {
+    display: none;
+  }
 
   .section2 p {
     bottom: 0;
+  }
+  .nyhedsbrev {
+    display: none;
   }
 
   .boxunder {
