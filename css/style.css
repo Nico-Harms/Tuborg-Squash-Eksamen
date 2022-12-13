@@ -30,6 +30,10 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 60px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+
 }
 
 .navbar ul li {
@@ -82,18 +86,20 @@ header {
 }
 
 .footerlogo {
-  height: 40px;
-  margin: 15px;
+  height: 30px;
+
 }
 
 .footerwrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 5px;
 }
 
 .footer p {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  margin: 10px;
 }
 
 .boxunder img {
@@ -214,122 +220,194 @@ header {
   }
 
 
-.section2 p {
-  bottom: 0;
-}
+  .section2 p {
+    bottom: 0;
+  }
 
-.boxunder {
-  height: 40vh;
-  width: 100%;
-  background-color: #f6995b;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid red;
+  .boxunder {
+    height: 40vh;
+    width: 100%;
+    background-color: #f6995b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid red;
 
-}
+  }
 
-.boxunder input {
-  height: 30px;
-  width: 30%;
-}
+  .boxunder input {
+    height: 30px;
+    width: 30%;
+  }
 
-.boxunder a {
-  height: 30px;
-  width: 150px;
-  background-color: white;
-  text-align: center;
-  border-radius: 5px;
-  border: 1px solid rgb(33, 33, 172);
-  padding: 5px;
+  .boxunder a {
+    height: 30px;
+    width: 150px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(33, 33, 172);
+    padding: 5px;
 
-}
-.boxunder img {
-  display: inline-block;
-}
+  }
 
-.wrapper img {
-  height: 20vh;
-  width: 25vh;
-  border: 2px solid rgb(0, 0, 0);
-  position: relative;
-  left: -50px;
-}
+  .boxunder img {
+    display: inline-block;
+  }
 
-.column1 {
-  float: left;
-  width: 30%;
-  padding: 10px;
-  border: 2px solid red;
-}
+  .wrapper img {
+    height: 20vh;
+    width: 25vh;
+    border: 2px solid rgb(0, 0, 0);
+    position: relative;
+    left: -50px;
+  }
 
-
-.column2 {
-  float: right;
-  width: 70%;
-  padding: 10px;
-  border: 2px solid rgb(38, 0, 255);
-  display: flex;
-  flex-direction: column;
-}
-
-.column2 input {
-  margin: 10px;
-  width: 70%;
-}
-
-.column2 a {
-  width: 70%;
-  margin: 10px;
-}
+  .column1 {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    border: 2px solid red;
+  }
 
 
-.section3 {
-  background-image: url(/img/produktside-blade.jpg);
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-  background-position-y: 0px;
-  width: auto;
-  background-size: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .column2 {
+    float: right;
+    width: 70%;
+    padding: 10px;
+    border: 2px solid rgb(38, 0, 255);
+    display: flex;
+    flex-direction: column;
+  }
 
-.section3 {
-  position: relative;
-}
-.test {
-  position: absolute;
-  bottom: 0;
-  margin: 10px 10px 
-}
-.section3 p {
-  font-size: 1.2rem;
-  text-align: center;
-}
+  .column2 input {
+    margin: 10px;
+    width: 70%;
+  }
+
+  .column2 a {
+    width: 70%;
+    margin: 10px;
+  }
 
 
-.sec3-text1 {
-  padding: 20px;
-}
+  .section3 {
+    background-image: url(/img/produktside-blade.jpg);
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-position-y: 0px;
+    width: auto;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.sec3-text2 {
-  padding: 20px;
-}
+  .section3 {
+    position: relative;
+  }
 
-.sec3-text3 {
-  padding: 20px;
-}
-.section3 a {
-  border: 1px solid black ;
-  border-radius: 10px;
-  background-color: #b1510d;
-  width: 30%;
-  height: 4%;
-  text-align: center;
-  color: white;
-}
+  .test {
+    position: absolute;
+    bottom: 5%;
+    margin: 10px 10px
+  }
+
+  .section3 p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+
+  .sec3-text1 {
+    padding: 20px;
+  }
+
+  .sec3-text2 {
+    padding: 20px;
+  }
+
+  .sec3-text3 {
+    padding: 20px;
+  }
+
+
+  .section3 a {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #b1510d;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: 35%
+  }
+
+  /* Skift til nyt HTML DOKUMENT (sommerkit.html) */
+  .main-sommer {
+    background-image: url(/img/infogra-with-plants.jpg);
+    height: 98vh;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-position-y: 70px;
+    width: auto;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headliner-sommerkit {
+    position: relative;
+    top: 5%;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 40px;
+  }
+
+  /* SKIFTER TIL SHOP HTML SIDE  */
+  .main-shop {
+    background: rgb(251, 169, 128);
+    background: linear-gradient(90deg, rgba(251, 169, 128, 1) 0%, rgba(250, 184, 120, 1) 48%, rgba(247, 201, 109, 1) 100%);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 70px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .kassewrapper {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .kassewrapper a {
+    width: 30vh;
+    height: 20vh;
+    background-color: white;
+    margin: 40px;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    
+    
+  }
+  .kassewrapper img {
+    width: 100%;
+    height: 100%;
+  }
+  .kassewrapper p {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 7px;
+  }
+
 }
