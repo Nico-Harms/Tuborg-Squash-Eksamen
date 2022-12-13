@@ -230,12 +230,24 @@ font-weight: bold;
 
 .section3 {
   background-image: url(/img/produktside-desktop.webp);
-  height: 90vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-position-y: 0px;
   width: auto;
   background-size: 100%;
+}
+.produktside-text {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  width: 40%;
+  height: 100%
+;
+}
+.produktside-text p {
+  font-size: 1.7rem;
 }
 
 /* Media query for mobile devices FIRST */ 
@@ -440,7 +452,7 @@ font-weight: bold;
     position: relative;
   }
 
-  .test {
+  .produktside-text {
     position: absolute;
     bottom: 5%;
     margin: 10px 10px
