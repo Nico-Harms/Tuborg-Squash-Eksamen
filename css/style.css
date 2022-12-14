@@ -324,6 +324,57 @@ font-weight: bold;
  font-size: 3rem;
  
 }
+/* SHOP.HTML STYLES */ 
+.main-shop {
+  height: 90vh;
+  scroll-snap-align: start;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 0px;
+  width: auto;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/shopside.webp);
+} 
+.kassewrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5%;
+}
+.kassewrapper a {
+  width: 35vh;
+  height: 25vh;
+  background-color: white;
+  margin: 40px;
+  color: rgb(51, 51, 51);
+  text-align: center;
+  border: 1px solid grey;
+  
+  
+}
+.kassewrapper img {
+  width: 100%;
+  height: 100%;
+}
+.kassewrapper p {
+  position: relative;
+  font-weight: bold;
+  height: 100%
+}
+.firstrow {
+  display: flex;
+}
+.secondrow {
+  display:flex
+}
+
+.underline-text {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 
 /* Media query for mobile devices FIRST */ 
 @media only screen and (max-width: 675px) {
@@ -588,7 +639,7 @@ font-weight: bold;
     padding: 40px;
   }
 
-  /* SKIFTER TIL SHOP HTML SIDE  */
+  /* SKIFTER TIL SHOP HTML SIDE - mobile  */
   .main-shop {
     background: rgb(251, 169, 128);
     background: linear-gradient(90deg, rgba(251, 169, 128, 1) 0%, rgba(250, 184, 120, 1) 48%, rgba(247, 201, 109, 1) 100%);
@@ -596,17 +647,20 @@ font-weight: bold;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-position-y: 70px;
+    background-position-y: 0px;
     width: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   
   .kassewrapper {
-    display: flex;
-    flex-direction: column;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
     
+  
   }
   .kassewrapper a {
     width: 30vh;
@@ -615,7 +669,6 @@ font-weight: bold;
     margin: 40px;
     color: rgb(51, 51, 51);
     text-align: center;
-    
     
   }
   .kassewrapper img {
@@ -627,5 +680,12 @@ font-weight: bold;
     font-weight: bold;
     padding-top: 7px;
   }
-
+  .firstrow {
+    display: flex;
+    flex-direction: column;
+  }
+  .secondrow {
+    display:flex;
+    flex-direction: column;
+  }
 }
