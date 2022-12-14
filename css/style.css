@@ -23,7 +23,6 @@ header {
   display: flex;
   height: 100%;
   align-items: center;
-  padding-left: 150px;
   
   
 }
@@ -181,6 +180,8 @@ header {
   width: auto;
   background-size: 100%;
   display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 /* Text under summer-kit picture */
 .sommerkit-text {
@@ -189,21 +190,28 @@ font-size: 2rem;
 color: black;
 padding-right: 10%;
 align-items: flex-end;
-margin-bottom: 8%;
-padding-left: 5%;
+margin-bottom: 10%;
+width: 90%;
+padding-left: 14%;
 
+}
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
-/* Text next to can, without absolute */
-.section2-desktop {
+/*might delete - text next to can,*/
+.cantext {
   font-size: 1.5rem;
   width: 20%;
   line-height: 1.5;
   display: flex;
   align-items: center;
-  padding-top: 25%;
+  padding-bottom: 6%;
   margin-left: 15%;
+  width: 20%;
   font-weight: bold;
 }
   
@@ -211,42 +219,66 @@ padding-left: 5%;
 .boxunder {
  display: none;
 }
+.section4 {
+  height: 20vh;
+  width: 100%;
+  background-color: #f6995b;
+}
+
+.column1 {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  
+}
 /* Nyhedsbrev box */
 .nyhedsbrev {
-  width: 25%;
+  width: 50%;
   text-align: center;
   align-items: center;
-  height: 60%;
+  justify-content: space-between;
+  height: 80%;
   background-color: #f6995b;
   margin-top: 10%;
   display: flex;
   flex-direction: column;
   border: 1px solid black;
+  margin: 5% 2%;
+
 }
 .nyhedsbrev p {
-  line-height: 2rem;
-  font-size: 1.6rem;
-  margin-top: 20px;
+  line-height: 2.5rem;
+  font-size: 1.8rem;
+  margin-top: 10px;
+  width: 90%;
+  text-align: center;
 }
 .nyhedsbrev input {
   width: 70%;
   font-size: 1.4rem; 
-  height: 10%;
-  margin-top: 10%;
+  height: 40%;
+  padding: 10px;
+  
   border: 1px solid black
 }
 .nyhedsbrev a {
 width: 80%;
-  height: 15%;
+height: 15%;
 background-color: white;
 border-radius: 10px;
-margin-top: 10%;
+margin-top: 5%;
 padding: 15px;
 border: 1px solid rgb(0, 0, 0);
 color: rgb(0, 0, 0);
 font-size: 1.6rem;
 font-weight: bold;
 
+}
+.nyhedsbrev h2 {
+  font-size: 3rem;
 }
 
 .section3 {
@@ -375,6 +407,9 @@ display: flex;
 flex-direction: column;
 align-items: center;
 }
+.section4 img {
+display: none;
+}
 
 /* Media query for mobile devices FIRST */ 
 @media only screen and (max-width: 675px) {
@@ -431,9 +466,10 @@ align-items: center;
   }
 
   .mainclass section p {
-    margin: 20px;
     font-size: 1.2rem;
     text-align: center;
+    justify-content: center;
+    padding: 0px 30px;
 
   }
 
@@ -446,21 +482,32 @@ align-items: center;
     padding-bottom: 10px;
     padding-top: 20px;
   }
+  
 
   .inline {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-right: 50px;
     margin: 15px;
+    width: 100%;
   }
 
   .text-landing {
     height: 60vh;
+    
   }
 
   .headerpicture {
     height: 20vh;
     background-image: url(/img/strandbaggrund.webp);
     background-position-y: 0px;
+  }
+
+  .headerpicture h3 {
+    text-align: center;
+    justify-content: center;
+    padding-top: 55px;
+    font-size: 1.6rem;
   }
 
   .section2 {
@@ -482,82 +529,91 @@ align-items: center;
     font-size: 1.3rem;
 
   }
-  .section2-desktop {
-    display: none;
-  }
-
-  .section2 p {
-    bottom: 0;
-  }
-  .nyhedsbrev {
-    display: none;
-  }
-
-  .boxunder {
-    height: 40vh;
-    width: 100%;
-    background-color: #f6995b;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid red;
-
-  }
-
-  .boxunder input {
-    height: 30px;
-    width: 30%;
-  }
-
-  .boxunder a {
-    height: 30px;
-    width: 150px;
-    background-color: white;
-    text-align: center;
-    border-radius: 5px;
-    border: 1px solid rgb(33, 33, 172);
-    padding: 5px;
-
-  }
-
-  .boxunder img {
-    display: inline-block;
-  }
-
-  .wrapper img {
-    height: 20vh;
-    width: 25vh;
-    border: 2px solid rgb(0, 0, 0);
-    position: relative;
-    left: -50px;
-  }
-
-  .column1 {
-    float: left;
-    width: 30%;
-    padding: 10px;
-    border: 2px solid red;
-  }
 
 
-  .column2 {
-    float: right;
-    width: 70%;
-    padding: 10px;
-    border: 2px solid rgb(38, 0, 255);
-    display: flex;
-    flex-direction: column;
-  }
+.section2 p {
+  bottom: 0;
+}
 
-  .column2 input {
-    margin: 10px;
-    width: 70%;
-  }
+.nyhedsbrev {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #f6995b;
+  border: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 
-  .column2 a {
-    width: 70%;
-    margin: 10px;
-  }
+}
+
+.nyhedsbrev input {
+  height: 30px;
+  width: 30%;
+}
+
+.nyhedsbrev a {
+  height: 30px;
+  width: 150px;
+  background-color: white;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid rgb(33, 33, 172);
+  padding: 5px;
+
+}
+.nyhedsbrev img {
+  display: inline-block;
+}
+
+
+.section4 {
+  height: 20vh;
+  width: 100%;
+  background-color: #f6995b;
+}
+
+.column1 {
+  width: 100%;
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  
+}
+
+.column1 input {
+  width: 60%;
+  height: 2.0em;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-bottom: 13px;
+}
+
+.column1 a {
+  width: 60%;
+  padding: 0.5em;
+  background-color: white;
+  border: 1px black solid;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.section4 img {
+  width: 40%;
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  position: relative;
+  left: -2em;
+  bottom: 4em;
+  z-index: 2;
+}
 
 
   .section3 {
@@ -579,9 +635,15 @@ align-items: center;
   }
 
   .produktside-text {
-    position: absolute;
-    bottom: 5%;
-    margin: 10px 10px
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 80%;
   }
 
   .section3 p {
@@ -607,12 +669,13 @@ align-items: center;
     border: 1px solid black;
     border-radius: 10px;
     background-color: #b1510d;
-    width: 30%;
+    width: 50%;
+    font-size: 1.5rem;
     padding: 10px;
     text-align: center;
     color: white;
     position: absolute;
-    left: 10%;
+    left: 5%;
     top: 35%
   }
 
@@ -687,5 +750,8 @@ align-items: center;
   .secondrow {
     display:flex;
     flex-direction: column;
+  }
+  .footer p {
+    font-size: 0.6rem;
   }
 }
