@@ -5,7 +5,7 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
-
+/* Header standards for desktop + mobile */ 
 header {
   display: flex;
   top: 0;
@@ -17,14 +17,16 @@ header {
 
 .navbar img {
   height: 100%;
+  width: 8rem;
 }
 
 .navbar ul {
   display: flex;
   height: 100%;
   align-items: center;
-  
-  
+  z-index: 10;
+
+
 }
 
 .navbar {
@@ -35,6 +37,7 @@ header {
   top: 0;
   width: 100%;
   
+
 
 }
 
@@ -54,7 +57,7 @@ header {
   text-transform: uppercase;
   color: rgb(0, 0, 0);
 }
-
+/* Button for burgermenu */
 .toggle-button {
   position: absolute;
   top: .75rem;
@@ -74,7 +77,7 @@ header {
   border-radius: 10px;
 }
 
-
+/* Standard settings for footer */
 .footer {
   text-align: center;
   height: 100px;
@@ -86,7 +89,7 @@ header {
   display: inline-block;
   text-align: center;
   margin: 5px 10px;
-  
+
 }
 
 .footerlogo {
@@ -106,10 +109,8 @@ header {
   margin: 10px;
 }
 
-.boxunder img {
-  display: none;
-}
 
+/* Landing page desktop version */ 
 .mainclass {
   height: 100vh;
   scroll-snap-align: start;
@@ -141,16 +142,19 @@ header {
   justify-content: space-between;
   margin: 5px;
   width: 70rem;
-  
+
 }
+
 .mainclass h2 {
   font-size: 3rem;
 }
-.mainclass p  {
+
+.mainclass p {
   font-size: 1.8rem;
   padding-bottom: 20px;
 }
 
+/* Beach-foto section for summerkit page -- desktop */ 
 .headerpicture {
   height: 25vh;
   background-image: url(/img/strandbaggrund-desktop.webp);
@@ -159,9 +163,10 @@ header {
   background-size: cover;
   background-position: center;
   width: auto;
-  
-  
+
+
 }
+
 .headerpicture h3 {
   position: relative;
   padding-top: 80px;
@@ -169,6 +174,7 @@ header {
   width: 100%;
   text-align: center;
 }
+
 /* Summer kit side*/
 .section2 {
   background-image: url(/img/sommerkit-side.png);
@@ -183,23 +189,27 @@ header {
   align-items: flex-end;
   justify-content: flex-end;
 }
+/* Not displaying the can for desktop version */ 
+.boxunder img {
+  display: none;
+}
+
 /* Text under summer-kit picture */
 .sommerkit-text {
-display: flex;
-font-size: 2rem;
-color: black;
-padding-right: 10%;
-align-items: flex-end;
-margin-bottom: 10%;
-width: 90%;
-padding-left: 14%;
+  display: flex;
+  font-size: 2rem;
+  color: black;
+  padding-right: 10%;
+  align-items: flex-end;
+  margin-bottom: 10%;
+  width: 90%;
+  padding-left: 14%;
+  text-decoration: underline;
+ 
 
 }
-.test {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
+
 
 
 /*might delete - text next to can,*/
@@ -213,27 +223,30 @@ padding-left: 14%;
   margin-left: 15%;
   width: 20%;
   font-weight: bold;
+  color: black;
+  text-decoration: underline;
 }
-  
-  /* Not displaying mobile version box */
+
+/* Not displaying mobile version box */
 .boxunder {
- display: none;
+  display: none;
 }
+
+/* box around newsletter class */ 
 .section4 {
   height: 20vh;
   width: 100%;
   background-color: #f6995b;
 }
-
+/* class for newsletterbox */ 
 .column1 {
   width: 100%;
-
   display: flex;
   flex-direction: column;
-  
   align-items: center;
-  
+
 }
+
 /* Nyhedsbrev box */
 .nyhedsbrev {
   width: 50%;
@@ -249,6 +262,7 @@ padding-left: 14%;
   margin: 5% 2%;
 
 }
+
 .nyhedsbrev p {
   line-height: 2.5rem;
   font-size: 1.8rem;
@@ -256,31 +270,35 @@ padding-left: 14%;
   width: 90%;
   text-align: center;
 }
+
 .nyhedsbrev input {
   width: 70%;
-  font-size: 1.4rem; 
+  font-size: 1.4rem;
   height: 40%;
   padding: 10px;
-  
+
   border: 1px solid black
 }
+
 .nyhedsbrev a {
-width: 80%;
-height: 15%;
-background-color: white;
-border-radius: 10px;
-margin-top: 5%;
-padding: 15px;
-border: 1px solid rgb(0, 0, 0);
-color: rgb(0, 0, 0);
-font-size: 1.6rem;
-font-weight: bold;
+  width: 80%;
+  height: 15%;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 5%;
+  padding: 15px;
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  font-size: 1.6rem;
+  font-weight: bold;
 
 }
+
 .nyhedsbrev h2 {
   font-size: 3rem;
 }
 
+/* Product side */ 
 .section3 {
   background-image: url(/img/produktside-desktop.webp);
   height: 100vh;
@@ -291,10 +309,11 @@ font-weight: bold;
   width: auto;
   background-size: 100%;
 }
+
 .produktside-text {
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   width: 50%;
   height: 100%;
@@ -303,11 +322,13 @@ font-weight: bold;
   padding-left: 200px;
 
 }
+
 .produktside-text p {
   font-size: 2rem;
-  line-height: 2,5rem;
+  line-height: 2, 5rem;
   text-align: center;
 }
+/* "Se produkt" button */
 .produktside-text a {
   width: 35%;
   height: 8%;
@@ -318,7 +339,7 @@ font-weight: bold;
   font-size: 1.6rem;
   color: #ffb819;
   border-radius: 20px;
-  
+
 }
 
 .sec3-text1 {
@@ -333,7 +354,7 @@ font-weight: bold;
   padding: 40px;
 }
 
-/* Infographic.html side styling */
+/* Infographic.html side styling -- desktop */
 .main-sommer {
   height: 120vh;
   scroll-snap-align: start;
@@ -346,17 +367,20 @@ font-weight: bold;
   justify-content: center;
   align-items: center;
   background-image: url(/img/infographic-desktop.webp);
-} 
+}
+
 .headliner-sommerkit {
   height: 100%;
   display: flex;
   margin-top: 5%;
 }
+
 .main-sommer h2 {
- font-size: 3rem;
- 
+  font-size: 3rem;
+
 }
-/* SHOP.HTML STYLES */ 
+
+/* SHOP.HTML STYLES -- desktop */
 .main-shop {
   height: 90vh;
   scroll-snap-align: start;
@@ -369,58 +393,72 @@ font-weight: bold;
   justify-content: center;
   align-items: center;
   background-image: url(/img/shopside.webp);
-} 
+}
+
 .kassewrapper {
   display: flex;
   flex-direction: column;
   padding-bottom: 5%;
 }
+
 .kassewrapper a {
   width: 35vh;
   height: 25vh;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   margin: 40px;
   color: rgb(51, 51, 51);
   text-align: center;
   border: 1px solid grey;
-  
-  
+
+
 }
+
 .kassewrapper img {
   width: 100%;
   height: 100%;
 }
+
 .kassewrapper p {
   position: relative;
   font-weight: bold;
-  height: 100%
+  height: 100%;
 }
+
 .firstrow {
   display: flex;
 }
+
 .secondrow {
-  display:flex
+  display: flex
 }
 
 .underline-text {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-.section4 img {
-display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Media query for mobile devices FIRST */ 
+
+/* placere nyt sted */ 
+.section4 img {
+  display: none;
+}
+
+
+/* Media query for mobile devices FOCUS IPHONE X */
 @media only screen and (max-width: 675px) {
 
+  /* burger menu visable */
   .toggle-button {
     display: flex;
+    
+   
   }
-
+/* Nav-menu hidden */
   .navbar-links {
     display: none;
     width: 100%;
+    
 
   }
 
@@ -428,6 +466,7 @@ display: none;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+   
 
   }
 
@@ -435,12 +474,13 @@ display: none;
     flex-direction: column;
     width: 100%;
     background-color: white;
+    
 
   }
 
   .navbar-links li {
     text-align: center;
-
+    
   }
 
   .navbar-links li a {
@@ -449,14 +489,14 @@ display: none;
 
   .navbar-links.active {
     display: flex;
+    z-index: 10;
   }
-
+/* Landing-page --- mobile version */ 
   .mainclass {
-    height: 100vh;
+    height: 90vh;
     scroll-snap-align: start;
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: 70px;
     width: auto;
     background-size: 100%;
     display: flex;
@@ -482,21 +522,22 @@ display: none;
     padding-bottom: 10px;
     padding-top: 20px;
   }
-  
+
 
   .inline {
     display: flex;
-    justify-content: space-around;
-    padding-right: 50px;
+    justify-content: space-between;
+    padding-right: 30px;
     margin: 15px;
     width: 100%;
   }
 
   .text-landing {
     height: 60vh;
-    
-  }
+    padding: 0;
 
+  }
+/* beach section foto -- mobile version */ 
   .headerpicture {
     height: 20vh;
     background-image: url(/img/strandbaggrund.webp);
@@ -509,10 +550,10 @@ display: none;
     padding-top: 55px;
     font-size: 1.6rem;
   }
-
+/* Summer-kit section */
   .section2 {
     background-image: url(/img/sommerkit.jpg);
-    height: 45vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -524,6 +565,19 @@ display: none;
     align-items: center;
   }
 
+  .sommerkit-text {
+    height: 100%;
+    width: 90%;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    
+  }
+/* Removing the can text from the mobile version */ 
+  .cantext {
+    display: none;
+  }
+
   .section2 p {
     text-align: center;
     font-size: 1.3rem;
@@ -531,91 +585,94 @@ display: none;
   }
 
 
-.section2 p {
-  bottom: 0;
-}
-
-.nyhedsbrev {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  background-color: #f6995b;
-  border: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-
-}
-
-.nyhedsbrev input {
-  height: 30px;
-  width: 30%;
-}
-
-.nyhedsbrev a {
-  height: 30px;
-  width: 150px;
-  background-color: white;
-  text-align: center;
-  border-radius: 5px;
-  border: 1px solid rgb(33, 33, 172);
-  padding: 5px;
-
-}
-.nyhedsbrev img {
-  display: inline-block;
-}
+  .section2 p {
+    bottom: 0;
+  }
+/* Styles for newsletter box and the contents */ 
+  .nyhedsbrev {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #f6995b;
+    border: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 
-.section4 {
-  height: 20vh;
-  width: 100%;
-  background-color: #f6995b;
-}
+  }
 
-.column1 {
-  width: 100%;
-  padding-top: 2em;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  
-}
+  .nyhedsbrev input {
+    height: 30px;
+    width: 30%;
+  }
 
-.column1 input {
-  width: 60%;
-  height: 2.0em;
-  font-size: 1.5em;
-  font-weight: bold;
-  padding-bottom: 13px;
-}
+  .nyhedsbrev a {
+    height: 30px;
+    width: 150px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(33, 33, 172);
+    padding: 5px;
 
-.column1 a {
-  width: 60%;
-  padding: 0.5em;
-  background-color: white;
-  border: 1px black solid;
-  text-align: center;
-  font-size: 1.5em;
-  font-weight: bold;
-  z-index: 10;
-}
+  }
 
-.section4 img {
-  width: 40%;
-  display: flex;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-  position: relative;
-  left: -2em;
-  bottom: 4em;
-  z-index: 2;
-}
+  .nyhedsbrev img {
+    display: inline-block;
+  }
 
 
+  .section4 {
+    height: 20vh;
+    width: 100%;
+    background-color: #f6995b;
+  }
+
+  .column1 {
+    width: 100%;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+  }
+
+  .column1 input {
+    width: 60%;
+    height: 2.0em;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 13px;
+  }
+
+  .column1 a {
+    width: 60%;
+    background-color: white;
+    border: 1px black solid;
+    text-align: center;
+    height: 100%;
+    font-size: 1.5em;
+    font-weight: bold;
+    z-index: 10;
+  }
+
+  .section4 img {
+    width: 40%;
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    position: relative;
+    left: -2em;
+    bottom: 5em;
+    z-index: 2;
+  }
+
+
+/* Product side - mobile version */
   .section3 {
     background-image: url(/img/produktside-blade.jpg);
     height: 85vh;
@@ -664,7 +721,7 @@ display: none;
     padding: 20px;
   }
 
-
+/* Button for "Se produkter */
   .section3 a {
     border: 1px solid black;
     border-radius: 10px;
@@ -676,17 +733,15 @@ display: none;
     color: white;
     position: absolute;
     left: 5%;
-    top: 35%
+    top: 30%
   }
 
-  /* Skift til nyt HTML DOKUMENT (sommerkit.html) */
+  /* SWITCHING TO HTML DOCUMENT (sommerkit.html) -- MOBILE VERSION */
   .main-sommer {
     background-image: url(/img/infogra-with-plants.jpg);
-    height: 98vh;
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
-    background-position-y: 70px;
     width: auto;
     background-size: 100%;
     display: flex;
@@ -694,15 +749,13 @@ display: none;
     align-items: center;
   }
 
-  .headliner-sommerkit {
-    position: relative;
-    top: 5%;
-    font-size: 1.6rem;
+  .headliner-sommerkit h2 {
+    font-size: 2.5rem;
     text-align: center;
-    padding: 40px;
+    width: 70;
   }
 
-  /* SKIFTER TIL SHOP HTML SIDE - mobile  */
+  /* SWITCHING TO SHOP HTML DOCUMENT (shop.html -- MOBILE VERSION */
   .main-shop {
     background: rgb(251, 169, 128);
     background: linear-gradient(90deg, rgba(251, 169, 128, 1) 0%, rgba(250, 184, 120, 1) 48%, rgba(247, 201, 109, 1) 100%);
@@ -715,16 +768,17 @@ display: none;
     display: flex;
     flex-direction: column;
   }
-  
+    /* switching layout from desktop to mobile */ 
   .kassewrapper {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   height: 100%;
-    
-  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+
   }
+
   .kassewrapper a {
     width: 30vh;
     height: 20vh;
@@ -732,25 +786,30 @@ display: none;
     margin: 40px;
     color: rgb(51, 51, 51);
     text-align: center;
-    
+
   }
+
   .kassewrapper img {
     width: 100%;
     height: 100%;
   }
+
   .kassewrapper p {
     text-align: center;
     font-weight: bold;
     padding-top: 7px;
   }
+
   .firstrow {
     display: flex;
     flex-direction: column;
   }
+
   .secondrow {
-    display:flex;
+    display: flex;
     flex-direction: column;
   }
+
   .footer p {
     font-size: 0.6rem;
   }
