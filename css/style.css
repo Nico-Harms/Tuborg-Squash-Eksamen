@@ -4,6 +4,8 @@
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
+  font-family: 'Ubuntu', sans-serif;
+
 }
 /* Header standards for desktop + mobile */ 
 header {
@@ -26,6 +28,7 @@ header {
   max-width: 100%;
   align-items: center;
   z-index: 10;
+  padding: 0px 200px;
 
 
 }
@@ -36,7 +39,7 @@ header {
   height: 60px;
   background-color: white;
   top: 0;
-  max-width: 100%;
+  width: 100%;
   
 
 
@@ -46,17 +49,20 @@ header {
   list-style: none;
   display: block;
   position: relative;
-  margin: 0 150px;
+  margin: 0 50px;
   display: flex;
   align-items: center;
   font-weight: bold;
   font-family: "Oswald", sans-serif;
+ 
 }
 
 .navbar ul li a {
   text-decoration: none;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
+  
+
 }
 /* Button for burgermenu */
 .toggle-button {
@@ -110,7 +116,9 @@ header {
   margin: 10px;
 }
 
-
+.wrap-main {
+  height: 100%;
+}
 /* Landing page desktop version */ 
 .mainclass {
   height: 100vh;
@@ -147,7 +155,8 @@ header {
 }
 
 .mainclass h2 {
-  font-size: 3rem;
+  font-size: 3em;
+  max-width: 100%;
 }
 
 .mainclass p {
@@ -373,11 +382,14 @@ header {
 .headliner-sommerkit {
   height: 100%;
   display: flex;
+  max-width: 100%;
   margin-top: 5%;
 }
 
 .main-sommer h2 {
   font-size: 3rem;
+  padding: 10px;
+  text-align: center;
 
 }
 
