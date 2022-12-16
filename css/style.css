@@ -326,15 +326,15 @@ header {
   justify-content: center;
   align-items: center;
   width: 50%;
-  height: 100%;
-  margin-left: 250px;
-  padding-top: 250px;
-  padding-left: 200px;
+  max-height: 70%;
+  margin-left: 15%;
+  padding-top: 25%;
+  padding-left: 10%;
 
 }
 
 .produktside-text p {
-  font-size: 2rem;
+  font-size: clamp(0.5rem, 1.5vw, 2rem);
   line-height: 2, 5rem;
   text-align: center;
 }
@@ -345,23 +345,24 @@ header {
   background: white;
   border: 2px solid black;
   text-align: center;
-  padding: 10px;
+  padding: 1%;
   font-size: 1.6rem;
+  font-size: clamp(1.5rem, 2rem, 3rem);
   color: #ffb819;
   border-radius: 20px;
 
 }
 
 .sec3-text1 {
-  padding: 30px;
+  padding: 5%;
 }
 
 .sec3-text2 {
-  padding: 30px;
+  padding: 5%;
 }
 
 .sec3-text3 {
-  padding: 40px;
+  padding: 5%;
 }
 
 /* Infographic.html side styling -- desktop */
@@ -456,7 +457,179 @@ header {
 .section4 img {
   display: none;
 }
+/* Landing page adjustments */ 
+@media only screen and (max-width: 1100px) {
+  .text-landing {
+    position: relative;
+    padding-top: 40px;
+    text-align: center;
+  }
+  
+  .headliner1 {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  .inline {
+    justify-content: space-around;
+  
+  }
+  
+  .mainclass h2 {
+    font-size: 3em;
+    max-width: 100%;
+    
+  }
+  
+  .mainclass p {
+    font-size: 1.5rem;
+    
+  }
+/* newsletter adjustments 
+  
+/* Text under summer-kit picture */
+.sommerkit-text {
+  display: flex;
+  font-size: 1.5rem;
+  color: black;
+  padding-right: 15%;
+  align-items: flex-end;
+  margin-bottom: 23%;
+  width: 20%;
+  padding-left: 14%;
+  text-decoration: underline;
+ 
 
+}
+
+
+
+
+/*might delete - text next to can,*/
+.cantext {
+  font-size: 1.2rem;
+  width: 40%;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  padding-bottom: 25%;
+  margin-left: 17%;
+  width: 20%;
+  font-weight: bold;
+  color: black;
+  text-decoration: underline;
+}
+
+/* Not displaying mobile version box */
+.boxunder {
+  display: none;
+}
+
+/* box around newsletter class */ 
+.section4 {
+  height: 20vh;
+  width: 100%;
+  background-color: #f6995b;
+}
+/* class for newsletterbox */ 
+.column1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* Nyhedsbrev box */
+.nyhedsbrev {
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 60%;
+  background-color: #f6995b;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 25% 2%;
+
+}
+
+.nyhedsbrev p {
+  line-height: 2rem;
+  font-size: 1.4rem;
+  margin-top: 10px;
+  width: 90%;
+  text-align: center;
+}
+
+.nyhedsbrev input {
+  width: 60%;
+  font-size: 1.4rem;
+  height: 40%;
+  padding: 10px;
+  margin-top: 10px;
+
+  border: 1px solid black
+}
+
+.nyhedsbrev a {
+  width: 60%;
+  height: 15%;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 5%;
+  padding: 15px;
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  font-size: 1.6rem;
+  font-weight: bold;
+
+}
+
+.nyhedsbrev h2 {
+  font-size: 2.5rem;
+}
+
+
+.produktside-text {
+ 
+  height: 100%;
+  padding-top: 15%;
+  padding-right: 10%;
+  padding-left: 0;
+
+}
+
+.produktside-text p {
+  line-height: 2, 5rem;
+  text-align: center;
+}
+/* "Se produkt" button */
+.produktside-text a {
+  width: 55%;
+  height: 8%;
+  padding: 20px;
+  margin-bottom: 30%;
+  font-size: 1.2rem;
+  color: #ffb819;
+  
+
+}
+
+.sec3-text1 {
+  padding: 10px;
+}
+
+.sec3-text2 {
+  padding: 10px;
+}
+
+.sec3-text3 {
+  padding: 10px;
+}
+
+}
 
 /* Media query for mobile devices FOCUS IPHONE X */
 @media only screen and (max-width: 675px) {
@@ -566,7 +739,7 @@ header {
 /* Summer-kit section */
   .section2 {
     background-image: url(/img/sommerkit.jpg);
-    height: 100vh;
+    height: 95vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -584,6 +757,7 @@ header {
     text-align: center;
     font-size: 1.4rem;
     font-weight: bold;
+    margin-bottom: 5%;
     
   }
 /* Removing the can text from the mobile version */ 
@@ -717,7 +891,7 @@ header {
   }
 
   .section3 p {
-    font-size: 1.2rem;
+    font-size:clamp(0.7rem, 1rem, 1.1rem);
     text-align: center;
   }
 
