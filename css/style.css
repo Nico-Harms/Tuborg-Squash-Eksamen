@@ -53,7 +53,7 @@ header {
   display: flex;
   align-items: center;
   font-weight: bold;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
  
 }
 
@@ -127,7 +127,7 @@ header {
   background-position: center;
   background-position-y: 0px;
   max-width: 100%;
-  background-size: 100%;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -187,14 +187,13 @@ header {
 
 /* Summer kit side*/
 .section2 {
-  background-image: url(/img/sommerkit-side.png);
+  background-image: url(/img/sommerkit-tuborg-squash.webp);
   height: 80vh;
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
   background-position-y: 0px;
   width: auto;
-  background-size: 100%;
+  background-size: cover;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -313,11 +312,10 @@ header {
   background-image: url(/img/produktside-desktop.webp);
   height: 100vh;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
   background-position-y: 0px;
   width: auto;
-  background-size: 100%;
 }
 
 .produktside-text {
@@ -736,9 +734,9 @@ header {
     padding-top: 55px;
     font-size: 1.6rem;
   }
-/* Summer-kit section */
+/* Summer-kit section -- mobile */
   .section2 {
-    background-image: url(/img/sommerkit.jpg);
+    background-image: url(/img/sommerkit-tuborg-squash-mobil.webp);
     height: 95vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -861,7 +859,7 @@ header {
 
 /* Product side - mobile version */
   .section3 {
-    background-image: url(/img/produktside-blade.jpg);
+    background-image: url(/img/tuborg-squash-produkter.webp);
     height: 85vh;
     background-repeat: no-repeat;
     background-size: auto;
@@ -925,7 +923,7 @@ header {
 
   /* SWITCHING TO HTML DOCUMENT (sommerkit.html) -- MOBILE VERSION */
   .main-sommer {
-    background-image: url(/img/infogra-with-plants.jpg);
+    background-image: url(/img/sommerkit-mobile.webp);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
