@@ -14,6 +14,7 @@ header {
   max-width: 100%;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
   position: sticky;
 }
 
@@ -840,7 +841,7 @@ header {
     height: 100%;
     font-size: 1.5em;
     font-weight: bold;
-    z-index: 10;
+    z-index: 5;
   }
 
   .section4 img {
@@ -880,8 +881,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     margin: 0;
     padding: 0;
     margin-top: 80%;
@@ -889,6 +890,7 @@ header {
 
   .section3 p {
     font-size:clamp(0.7rem, 1rem, 1.1rem);
+    line-height: 1.4rem;
     text-align: center;
   }
 
@@ -898,7 +900,7 @@ header {
   }
 
   .sec3-text2 {
-    padding: 20px;
+    padding: 10px;
   }
 
   .sec3-text3 {
