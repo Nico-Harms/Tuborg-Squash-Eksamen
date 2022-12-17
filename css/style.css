@@ -102,6 +102,7 @@ header {
 
 .footerlogo {
   height: 50px;
+  width: 100px;
 
 }
 
@@ -846,6 +847,7 @@ header {
 
   .section4 img {
     width: 40%;
+    height: auto;
     display: flex;
     max-width: 100%;
     max-height: 100%;
