@@ -91,7 +91,7 @@ header {
 }
 
 .some-icons img {
-  height: 20x;
+  height: 20px;
   width: 20px;
   display: inline-block;
   text-align: center;
@@ -333,7 +333,7 @@ header {
 
 .produktside-text p {
   font-size: clamp(0.5rem, 1.5vw, 2rem);
-  line-height: 2, 5rem;
+  line-height: 2.2rem;
   text-align: center;
 }
 /* "Se produkt" button */
@@ -600,7 +600,6 @@ header {
 }
 
 .produktside-text p {
-  line-height: 2, 5rem;
   text-align: center;
 }
 /* "Se produkt" button */
@@ -686,7 +685,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/img/Landing-page-squash.webp);
+    background-image: url(/img/landing-page-squash.webp);
   }
 
   .mainclass section p {
@@ -937,7 +936,6 @@ header {
   .headliner-sommerkit h2 {
     font-size: 2.5rem;
     text-align: center;
-    width: 70;
   }
 
   /* SWITCHING TO SHOP HTML DOCUMENT (shop.html -- MOBILE VERSION */
