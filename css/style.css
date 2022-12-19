@@ -363,6 +363,7 @@ header {
   background-position: center;
   background-position-y: 0px;
   width: auto;
+  background-color: #efc268;
 }
 
 .produktside-text {
@@ -540,8 +541,8 @@ header {
   color: black;
   padding-right: 15%;
   align-items: flex-end;
-  margin-bottom: 23%;
-  width: 20%;
+  margin-bottom: 10%;
+  width: 40%;
   padding-left: 14%;
   text-decoration: underline;
  
@@ -551,19 +552,9 @@ header {
 
 
 
-/*might delete - text next to can,*/
+/*display none - text next to can,*/
 .cantext {
-  font-size: 1.2rem;
-  width: 40%;
-  line-height: 1.5;
-  display: flex;
-  align-items: center;
-  padding-bottom: 25%;
-  margin-left: 17%;
-  width: 20%;
-  font-weight: bold;
-  color: black;
-  text-decoration: underline;
+  display: none;
 }
 
 /* Not displaying mobile version box */
@@ -588,23 +579,23 @@ header {
 
 /* Nyhedsbrev box */
 .nyhedsbrev {
-  width: 50%;
+  width: 30%;
   text-align: center;
   align-items: center;
-  justify-content: space-between;
-  height: 60%;
+  justify-content: space-evenly;
+  height: 100%;
   background-color: #f6995b;
   display: flex;
   flex-direction: column;
   border: 1px solid black;
-  margin: 25% 2%;
+  margin: 0% 2%;
 
 }
 
 .nyhedsbrev p {
   line-height: 2rem;
   font-size: 1.4rem;
-  margin-top: 10px;
+  margin-top: 5px;
   width: 90%;
   text-align: center;
 }
@@ -641,7 +632,8 @@ header {
 .produktside-text {
  
   height: 100%;
-  padding-top: 15%;
+  min-width: 60%;
+  padding-top: 30%;
   padding-right: 10%;
   padding-left: 0;
 
@@ -652,11 +644,13 @@ header {
 }
 /* "Se produkt" button */
 .produktside-text a {
-  width: 55%;
-  height: 8%;
-  padding: 20px;
+  width: 40%;
+  height: 20%;
+  padding: 10px;
+ height: auto;
+  text-align: center;
   margin-bottom: 30%;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #ffb819;
   
 
